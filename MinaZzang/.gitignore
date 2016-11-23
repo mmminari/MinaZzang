@@ -1,4 +1,3 @@
-.DS_Store
 build/
 *.pbxuser
 !default.pbxuser
@@ -15,3 +14,4 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+*.DS_Store
