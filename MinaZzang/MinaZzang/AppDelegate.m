@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SUMMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    SUMMainViewController *mainVC = [[SUMMainViewController alloc]initWithNibName:@"SUMMainViewController" bundle:nil];
+    self.window.rootViewController = mainVC;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

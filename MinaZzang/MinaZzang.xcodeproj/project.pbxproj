@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D5138031DE6BA6800FC512D /* EpEpisodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5137F01DE6BA6800FC512D /* EpEpisodeModel.m */; };
+		6D5138041DE6BA6800FC512D /* EpisodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5137F31DE6BA6800FC512D /* EpisodeView.m */; };
+		6D5138051DE6BA6800FC512D /* EpisodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D5137F41DE6BA6800FC512D /* EpisodeView.xib */; };
+		6D5138061DE6BA6800FC512D /* EpList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5137F61DE6BA6800FC512D /* EpList.m */; };
+		6D5138071DE6BA6800FC512D /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5137F81DE6BA6800FC512D /* HTTPClient.m */; };
+		6D5138081DE6BA6800FC512D /* LibraryClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5137FA1DE6BA6800FC512D /* LibraryClass.m */; };
+		6D5138091DE6BA6800FC512D /* MainContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5137FC1DE6BA6800FC512D /* MainContainerView.m */; };
+		6D51380A1DE6BA6800FC512D /* MainContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D5137FD1DE6BA6800FC512D /* MainContainerView.xib */; };
+		6D51380B1DE6BA6800FC512D /* SUMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5138001DE6BA6800FC512D /* SUMMainViewController.m */; };
+		6D51380C1DE6BA6800FC512D /* SUMMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D5138011DE6BA6800FC512D /* SUMMainViewController.xib */; };
 		6D7D3E7A1DE5871C00D6B6D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D3E791DE5871C00D6B6D9 /* main.m */; };
 		6D7D3E7D1DE5871C00D6B6D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D3E7C1DE5871C00D6B6D9 /* AppDelegate.m */; };
 		6D7D3E801DE5871C00D6B6D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D3E7F1DE5871C00D6B6D9 /* ViewController.m */; };
@@ -14,6 +24,8 @@
 		6D7D3E851DE5871C00D6B6D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D7D3E841DE5871C00D6B6D9 /* Assets.xcassets */; };
 		6D7D3E881DE5871C00D6B6D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7D3E861DE5871C00D6B6D9 /* LaunchScreen.storyboard */; };
 		6D7D3E931DE5871C00D6B6D9 /* MinaZzangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D3E921DE5871C00D6B6D9 /* MinaZzangTests.m */; };
+		99499BD55EB715065D76250D /* libPods-MinaZzangTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED889D30B53CD8CA54FF58B /* libPods-MinaZzangTests.a */; };
+		B9EC49A768306A8F925B8176 /* libPods-MinaZzang.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E53E82FD4D76ABCD86297 /* libPods-MinaZzang.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +39,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		039E53E82FD4D76ABCD86297 /* libPods-MinaZzang.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MinaZzang.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D5137EF1DE6BA6800FC512D /* EpEpisodeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpEpisodeModel.h; sourceTree = "<group>"; };
+		6D5137F01DE6BA6800FC512D /* EpEpisodeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpEpisodeModel.m; sourceTree = "<group>"; };
+		6D5137F11DE6BA6800FC512D /* EpEpisodeModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpEpisodeModels.h; sourceTree = "<group>"; };
+		6D5137F21DE6BA6800FC512D /* EpisodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpisodeView.h; sourceTree = "<group>"; };
+		6D5137F31DE6BA6800FC512D /* EpisodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpisodeView.m; sourceTree = "<group>"; };
+		6D5137F41DE6BA6800FC512D /* EpisodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EpisodeView.xib; sourceTree = "<group>"; };
+		6D5137F51DE6BA6800FC512D /* EpList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpList.h; sourceTree = "<group>"; };
+		6D5137F61DE6BA6800FC512D /* EpList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpList.m; sourceTree = "<group>"; };
+		6D5137F71DE6BA6800FC512D /* HTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
+		6D5137F81DE6BA6800FC512D /* HTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
+		6D5137F91DE6BA6800FC512D /* LibraryClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryClass.h; sourceTree = "<group>"; };
+		6D5137FA1DE6BA6800FC512D /* LibraryClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryClass.m; sourceTree = "<group>"; };
+		6D5137FB1DE6BA6800FC512D /* MainContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainContainerView.h; sourceTree = "<group>"; };
+		6D5137FC1DE6BA6800FC512D /* MainContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainContainerView.m; sourceTree = "<group>"; };
+		6D5137FD1DE6BA6800FC512D /* MainContainerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainContainerView.xib; sourceTree = "<group>"; };
+		6D5137FE1DE6BA6800FC512D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6D5137FF1DE6BA6800FC512D /* SUMMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUMMainViewController.h; sourceTree = "<group>"; };
+		6D5138001DE6BA6800FC512D /* SUMMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUMMainViewController.m; sourceTree = "<group>"; };
+		6D5138011DE6BA6800FC512D /* SUMMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SUMMainViewController.xib; sourceTree = "<group>"; };
+		6D5138021DE6BA6800FC512D /* YHDebugLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHDebugLog.h; sourceTree = "<group>"; };
 		6D7D3E751DE5871C00D6B6D9 /* MinaZzang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinaZzang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7D3E791DE5871C00D6B6D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6D7D3E7B1DE5871C00D6B6D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +73,11 @@
 		6D7D3E8E1DE5871C00D6B6D9 /* MinaZzangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinaZzangTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7D3E921DE5871C00D6B6D9 /* MinaZzangTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MinaZzangTests.m; sourceTree = "<group>"; };
 		6D7D3E941DE5871C00D6B6D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		885D8BA747304E5BD82CCF37 /* Pods-MinaZzang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinaZzang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MinaZzang/Pods-MinaZzang.debug.xcconfig"; sourceTree = "<group>"; };
+		8CC69BEFD5373B1F4E67C86A /* Pods-MinaZzangTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinaZzangTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MinaZzangTests/Pods-MinaZzangTests.release.xcconfig"; sourceTree = "<group>"; };
+		9ED889D30B53CD8CA54FF58B /* libPods-MinaZzangTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MinaZzangTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD0B7BADB8B79422494F4429 /* Pods-MinaZzangTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinaZzangTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MinaZzangTests/Pods-MinaZzangTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4C6276FE69A519B903DBD08 /* Pods-MinaZzang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinaZzang.release.xcconfig"; path = "Pods/Target Support Files/Pods-MinaZzang/Pods-MinaZzang.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9EC49A768306A8F925B8176 /* libPods-MinaZzang.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +93,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99499BD55EB715065D76250D /* libPods-MinaZzangTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E20D58F1CF16541B52CBDD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				039E53E82FD4D76ABCD86297 /* libPods-MinaZzang.a */,
+				9ED889D30B53CD8CA54FF58B /* libPods-MinaZzangTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54F548ED512476A9A8048281 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				885D8BA747304E5BD82CCF37 /* Pods-MinaZzang.debug.xcconfig */,
+				D4C6276FE69A519B903DBD08 /* Pods-MinaZzang.release.xcconfig */,
+				CD0B7BADB8B79422494F4429 /* Pods-MinaZzangTests.debug.xcconfig */,
+				8CC69BEFD5373B1F4E67C86A /* Pods-MinaZzangTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6D7D3E6C1DE5871B00D6B6D9 = {
 			isa = PBXGroup;
 			children = (
 				6D7D3E771DE5871C00D6B6D9 /* MinaZzang */,
 				6D7D3E911DE5871C00D6B6D9 /* MinaZzangTests */,
 				6D7D3E761DE5871C00D6B6D9 /* Products */,
+				54F548ED512476A9A8048281 /* Pods */,
+				0E20D58F1CF16541B52CBDD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +143,26 @@
 		6D7D3E771DE5871C00D6B6D9 /* MinaZzang */ = {
 			isa = PBXGroup;
 			children = (
+				6D5137EF1DE6BA6800FC512D /* EpEpisodeModel.h */,
+				6D5137F01DE6BA6800FC512D /* EpEpisodeModel.m */,
+				6D5137F11DE6BA6800FC512D /* EpEpisodeModels.h */,
+				6D5137F21DE6BA6800FC512D /* EpisodeView.h */,
+				6D5137F31DE6BA6800FC512D /* EpisodeView.m */,
+				6D5137F41DE6BA6800FC512D /* EpisodeView.xib */,
+				6D5137F51DE6BA6800FC512D /* EpList.h */,
+				6D5137F61DE6BA6800FC512D /* EpList.m */,
+				6D5137F71DE6BA6800FC512D /* HTTPClient.h */,
+				6D5137F81DE6BA6800FC512D /* HTTPClient.m */,
+				6D5137F91DE6BA6800FC512D /* LibraryClass.h */,
+				6D5137FA1DE6BA6800FC512D /* LibraryClass.m */,
+				6D5137FB1DE6BA6800FC512D /* MainContainerView.h */,
+				6D5137FC1DE6BA6800FC512D /* MainContainerView.m */,
+				6D5137FD1DE6BA6800FC512D /* MainContainerView.xib */,
+				6D5137FE1DE6BA6800FC512D /* PrefixHeader.pch */,
+				6D5137FF1DE6BA6800FC512D /* SUMMainViewController.h */,
+				6D5138001DE6BA6800FC512D /* SUMMainViewController.m */,
+				6D5138011DE6BA6800FC512D /* SUMMainViewController.xib */,
+				6D5138021DE6BA6800FC512D /* YHDebugLog.h */,
 				6D7D3E7B1DE5871C00D6B6D9 /* AppDelegate.h */,
 				6D7D3E7C1DE5871C00D6B6D9 /* AppDelegate.m */,
 				6D7D3E7E1DE5871C00D6B6D9 /* ViewController.h */,
@@ -118,9 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D7D3E971DE5871C00D6B6D9 /* Build configuration list for PBXNativeTarget "MinaZzang" */;
 			buildPhases = (
+				C3B8BB4E24299F7EDC3758B3 /* [CP] Check Pods Manifest.lock */,
 				6D7D3E711DE5871B00D6B6D9 /* Sources */,
 				6D7D3E721DE5871B00D6B6D9 /* Frameworks */,
 				6D7D3E731DE5871B00D6B6D9 /* Resources */,
+				8C8B00C249CE8C1F6745B0CF /* [CP] Embed Pods Frameworks */,
+				E1720A1C80F1F1BD48E508F4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D7D3E9A1DE5871C00D6B6D9 /* Build configuration list for PBXNativeTarget "MinaZzangTests" */;
 			buildPhases = (
+				52B1A5D14C21F3C588DAD366 /* [CP] Check Pods Manifest.lock */,
 				6D7D3E8A1DE5871C00D6B6D9 /* Sources */,
 				6D7D3E8B1DE5871C00D6B6D9 /* Frameworks */,
 				6D7D3E8C1DE5871C00D6B6D9 /* Resources */,
+				9EBD9DBF009E58454023DF6D /* [CP] Embed Pods Frameworks */,
+				99DAA1F17E485D5D5426BB38 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,9 +282,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D5138051DE6BA6800FC512D /* EpisodeView.xib in Resources */,
+				6D51380A1DE6BA6800FC512D /* MainContainerView.xib in Resources */,
 				6D7D3E881DE5871C00D6B6D9 /* LaunchScreen.storyboard in Resources */,
 				6D7D3E851DE5871C00D6B6D9 /* Assets.xcassets in Resources */,
 				6D7D3E831DE5871C00D6B6D9 /* Main.storyboard in Resources */,
+				6D51380C1DE6BA6800FC512D /* SUMMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +300,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		52B1A5D14C21F3C588DAD366 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8C8B00C249CE8C1F6745B0CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MinaZzang/Pods-MinaZzang-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99DAA1F17E485D5D5426BB38 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MinaZzangTests/Pods-MinaZzangTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EBD9DBF009E58454023DF6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MinaZzangTests/Pods-MinaZzangTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3B8BB4E24299F7EDC3758B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E1720A1C80F1F1BD48E508F4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MinaZzang/Pods-MinaZzang-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6D7D3E711DE5871B00D6B6D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -216,7 +400,14 @@
 			files = (
 				6D7D3E801DE5871C00D6B6D9 /* ViewController.m in Sources */,
 				6D7D3E7D1DE5871C00D6B6D9 /* AppDelegate.m in Sources */,
+				6D5138041DE6BA6800FC512D /* EpisodeView.m in Sources */,
+				6D5138031DE6BA6800FC512D /* EpEpisodeModel.m in Sources */,
+				6D5138081DE6BA6800FC512D /* LibraryClass.m in Sources */,
+				6D5138061DE6BA6800FC512D /* EpList.m in Sources */,
+				6D5138091DE6BA6800FC512D /* MainContainerView.m in Sources */,
+				6D51380B1DE6BA6800FC512D /* SUMMainViewController.m in Sources */,
 				6D7D3E7A1DE5871C00D6B6D9 /* main.m in Sources */,
+				6D5138071DE6BA6800FC512D /* HTTPClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,9 +539,11 @@
 		};
 		6D7D3E981DE5871C00D6B6D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 885D8BA747304E5BD82CCF37 /* Pods-MinaZzang.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A87J69XM38;
+				GCC_PREFIX_HEADER = "${SRCROOT}/${PROJECT_NAME}/PrefixHeader.pch";
 				INFOPLIST_FILE = MinaZzang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smict.MinaZzang;
@@ -360,9 +553,11 @@
 		};
 		6D7D3E991DE5871C00D6B6D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4C6276FE69A519B903DBD08 /* Pods-MinaZzang.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A87J69XM38;
+				GCC_PREFIX_HEADER = "${SRCROOT}/${PROJECT_NAME}/PrefixHeader.pch";
 				INFOPLIST_FILE = MinaZzang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smict.MinaZzang;
@@ -372,6 +567,7 @@
 		};
 		6D7D3E9B1DE5871C00D6B6D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD0B7BADB8B79422494F4429 /* Pods-MinaZzangTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MinaZzangTests/Info.plist;
@@ -384,6 +580,7 @@
 		};
 		6D7D3E9C1DE5871C00D6B6D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CC69BEFD5373B1F4E67C86A /* Pods-MinaZzangTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MinaZzangTests/Info.plist;
@@ -413,6 +610,7 @@
 				6D7D3E991DE5871C00D6B6D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D7D3E9A1DE5871C00D6B6D9 /* Build configuration list for PBXNativeTarget "MinaZzangTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +619,7 @@
 				6D7D3E9C1DE5871C00D6B6D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
