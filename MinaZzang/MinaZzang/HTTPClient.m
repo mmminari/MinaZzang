@@ -10,28 +10,6 @@
 
 @implementation HTTPClient
 
--(instancetype)initWithBaseURL
-{
-
-    if(self = [super initWithBaseURL:[NSURL URLWithString:@"https://pointapibeta.smtown.com"]])
-    {
-        LogYellow(@"initWithBaseURL");
-    }
-    
-    return self;
-    
-}
-
-- (instancetype)initWithFanBookBaseURL
-{
-    if(self = [super initWithBaseURL:[NSURL URLWithString:@"https://apidev.fanbook.me"]])
-    {
-        LogYellow(@"initWithFanBookBaseURL");
-    }
-    
-    return self;
-}
-
 - (instancetype)initWithSUMBaseURL
 {
     if(self == [super initWithBaseURL:[NSURL URLWithString:@"http://betajapan.sumstore.com"]])

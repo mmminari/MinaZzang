@@ -10,8 +10,6 @@
 
 @interface HTTPClient : AFHTTPSessionManager
 
-- (instancetype)initWithBaseURL;
-- (instancetype)initWithFanBookBaseURL;
 - (instancetype)initWithSUMBaseURL;
 
 

@@ -24,6 +24,9 @@
 		6D7D3E851DE5871C00D6B6D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D7D3E841DE5871C00D6B6D9 /* Assets.xcassets */; };
 		6D7D3E881DE5871C00D6B6D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7D3E861DE5871C00D6B6D9 /* LaunchScreen.storyboard */; };
 		6D7D3E931DE5871C00D6B6D9 /* MinaZzangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D3E921DE5871C00D6B6D9 /* MinaZzangTests.m */; };
+		6DEB24F41DE7E6A8007B1DC3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEB24F31DE7E6A8007B1DC3 /* BaseViewController.m */; };
+		6DEB24F81DE7E83E007B1DC3 /* SUMEpisodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEB24F61DE7E83E007B1DC3 /* SUMEpisodeCell.m */; };
+		6DEB24F91DE7E83E007B1DC3 /* SUMEpisodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEB24F71DE7E83E007B1DC3 /* SUMEpisodeCell.xib */; };
 		99499BD55EB715065D76250D /* libPods-MinaZzangTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED889D30B53CD8CA54FF58B /* libPods-MinaZzangTests.a */; };
 		B9EC49A768306A8F925B8176 /* libPods-MinaZzang.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 039E53E82FD4D76ABCD86297 /* libPods-MinaZzang.a */; };
 /* End PBXBuildFile section */
@@ -73,6 +76,11 @@
 		6D7D3E8E1DE5871C00D6B6D9 /* MinaZzangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinaZzangTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7D3E921DE5871C00D6B6D9 /* MinaZzangTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MinaZzangTests.m; sourceTree = "<group>"; };
 		6D7D3E941DE5871C00D6B6D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DEB24F21DE7E6A8007B1DC3 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		6DEB24F31DE7E6A8007B1DC3 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		6DEB24F51DE7E83E007B1DC3 /* SUMEpisodeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUMEpisodeCell.h; sourceTree = "<group>"; };
+		6DEB24F61DE7E83E007B1DC3 /* SUMEpisodeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUMEpisodeCell.m; sourceTree = "<group>"; };
+		6DEB24F71DE7E83E007B1DC3 /* SUMEpisodeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SUMEpisodeCell.xib; sourceTree = "<group>"; };
 		885D8BA747304E5BD82CCF37 /* Pods-MinaZzang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinaZzang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MinaZzang/Pods-MinaZzang.debug.xcconfig"; sourceTree = "<group>"; };
 		8CC69BEFD5373B1F4E67C86A /* Pods-MinaZzangTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinaZzangTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MinaZzangTests/Pods-MinaZzangTests.release.xcconfig"; sourceTree = "<group>"; };
 		9ED889D30B53CD8CA54FF58B /* libPods-MinaZzangTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MinaZzangTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,35 +151,36 @@
 		6D7D3E771DE5871C00D6B6D9 /* MinaZzang */ = {
 			isa = PBXGroup;
 			children = (
-				6D5137EF1DE6BA6800FC512D /* EpEpisodeModel.h */,
-				6D5137F01DE6BA6800FC512D /* EpEpisodeModel.m */,
-				6D5137F11DE6BA6800FC512D /* EpEpisodeModels.h */,
-				6D5137F21DE6BA6800FC512D /* EpisodeView.h */,
-				6D5137F31DE6BA6800FC512D /* EpisodeView.m */,
-				6D5137F41DE6BA6800FC512D /* EpisodeView.xib */,
-				6D5137F51DE6BA6800FC512D /* EpList.h */,
-				6D5137F61DE6BA6800FC512D /* EpList.m */,
+				6D5138021DE6BA6800FC512D /* YHDebugLog.h */,
+				6D5137FE1DE6BA6800FC512D /* PrefixHeader.pch */,
+				6D7D3E7B1DE5871C00D6B6D9 /* AppDelegate.h */,
+				6D7D3E7C1DE5871C00D6B6D9 /* AppDelegate.m */,
 				6D5137F71DE6BA6800FC512D /* HTTPClient.h */,
 				6D5137F81DE6BA6800FC512D /* HTTPClient.m */,
 				6D5137F91DE6BA6800FC512D /* LibraryClass.h */,
 				6D5137FA1DE6BA6800FC512D /* LibraryClass.m */,
+				6DEB24F11DE7E63C007B1DC3 /* Models */,
+				6D5137F21DE6BA6800FC512D /* EpisodeView.h */,
+				6D5137F31DE6BA6800FC512D /* EpisodeView.m */,
+				6D5137F41DE6BA6800FC512D /* EpisodeView.xib */,
 				6D5137FB1DE6BA6800FC512D /* MainContainerView.h */,
 				6D5137FC1DE6BA6800FC512D /* MainContainerView.m */,
 				6D5137FD1DE6BA6800FC512D /* MainContainerView.xib */,
-				6D5137FE1DE6BA6800FC512D /* PrefixHeader.pch */,
 				6D5137FF1DE6BA6800FC512D /* SUMMainViewController.h */,
 				6D5138001DE6BA6800FC512D /* SUMMainViewController.m */,
 				6D5138011DE6BA6800FC512D /* SUMMainViewController.xib */,
-				6D5138021DE6BA6800FC512D /* YHDebugLog.h */,
-				6D7D3E7B1DE5871C00D6B6D9 /* AppDelegate.h */,
-				6D7D3E7C1DE5871C00D6B6D9 /* AppDelegate.m */,
 				6D7D3E7E1DE5871C00D6B6D9 /* ViewController.h */,
 				6D7D3E7F1DE5871C00D6B6D9 /* ViewController.m */,
 				6D7D3E811DE5871C00D6B6D9 /* Main.storyboard */,
+				6DEB24F51DE7E83E007B1DC3 /* SUMEpisodeCell.h */,
+				6DEB24F61DE7E83E007B1DC3 /* SUMEpisodeCell.m */,
+				6DEB24F71DE7E83E007B1DC3 /* SUMEpisodeCell.xib */,
 				6D7D3E841DE5871C00D6B6D9 /* Assets.xcassets */,
 				6D7D3E861DE5871C00D6B6D9 /* LaunchScreen.storyboard */,
 				6D7D3E891DE5871C00D6B6D9 /* Info.plist */,
 				6D7D3E781DE5871C00D6B6D9 /* Supporting Files */,
+				6DEB24F21DE7E6A8007B1DC3 /* BaseViewController.h */,
+				6DEB24F31DE7E6A8007B1DC3 /* BaseViewController.m */,
 			);
 			path = MinaZzang;
 			sourceTree = "<group>";
@@ -191,6 +200,18 @@
 				6D7D3E941DE5871C00D6B6D9 /* Info.plist */,
 			);
 			path = MinaZzangTests;
+			sourceTree = "<group>";
+		};
+		6DEB24F11DE7E63C007B1DC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6D5137F51DE6BA6800FC512D /* EpList.h */,
+				6D5137F61DE6BA6800FC512D /* EpList.m */,
+				6D5137EF1DE6BA6800FC512D /* EpEpisodeModel.h */,
+				6D5137F01DE6BA6800FC512D /* EpEpisodeModel.m */,
+				6D5137F11DE6BA6800FC512D /* EpEpisodeModels.h */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +306,7 @@
 				6D5138051DE6BA6800FC512D /* EpisodeView.xib in Resources */,
 				6D51380A1DE6BA6800FC512D /* MainContainerView.xib in Resources */,
 				6D7D3E881DE5871C00D6B6D9 /* LaunchScreen.storyboard in Resources */,
+				6DEB24F91DE7E83E007B1DC3 /* SUMEpisodeCell.xib in Resources */,
 				6D7D3E851DE5871C00D6B6D9 /* Assets.xcassets in Resources */,
 				6D7D3E831DE5871C00D6B6D9 /* Main.storyboard in Resources */,
 				6D51380C1DE6BA6800FC512D /* SUMMainViewController.xib in Resources */,
@@ -400,8 +422,10 @@
 			files = (
 				6D7D3E801DE5871C00D6B6D9 /* ViewController.m in Sources */,
 				6D7D3E7D1DE5871C00D6B6D9 /* AppDelegate.m in Sources */,
+				6DEB24F41DE7E6A8007B1DC3 /* BaseViewController.m in Sources */,
 				6D5138041DE6BA6800FC512D /* EpisodeView.m in Sources */,
 				6D5138031DE6BA6800FC512D /* EpEpisodeModel.m in Sources */,
+				6DEB24F81DE7E83E007B1DC3 /* SUMEpisodeCell.m in Sources */,
 				6D5138081DE6BA6800FC512D /* LibraryClass.m in Sources */,
 				6D5138061DE6BA6800FC512D /* EpList.m in Sources */,
 				6D5138091DE6BA6800FC512D /* MainContainerView.m in Sources */,
@@ -545,6 +569,7 @@
 				DEVELOPMENT_TEAM = A87J69XM38;
 				GCC_PREFIX_HEADER = "${SRCROOT}/${PROJECT_NAME}/PrefixHeader.pch";
 				INFOPLIST_FILE = MinaZzang/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smict.MinaZzang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -559,6 +584,7 @@
 				DEVELOPMENT_TEAM = A87J69XM38;
 				GCC_PREFIX_HEADER = "${SRCROOT}/${PROJECT_NAME}/PrefixHeader.pch";
 				INFOPLIST_FILE = MinaZzang/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smict.MinaZzang;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -12,9 +12,15 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *ivEpisode;
 @property (weak, nonatomic) IBOutlet UILabel *lbEpName;
+@property (weak, nonatomic) IBOutlet UILabel *lbEpTitle;
+@property (weak, nonatomic) IBOutlet UILabel *lbEpMain;
+@property (weak, nonatomic) IBOutlet UILabel *lbEpDetail;
 
 
 - (void)startAnimation;
+- (void)remainLayout;
 - (void)initLayout;
+- (void)startAnimationWithCompletion:(void(^)(void))completion;
+
 
 @end

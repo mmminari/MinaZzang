@@ -59,7 +59,8 @@
             epView.frame = CGRectMake(screenWidth *i, 0, screenWidth, screenHeight);
             
             epView.lbEpName.text = episode.eName;
-            
+            epView.lbEpMain.text = episode.eInfoMain;
+            epView.lbEpDetail.text = episode.eInfoDetail;
     
             [self.lib setImageView:epView.ivEpisode urlString:episode.eMainImgUrl placeholderImage:nil animation:YES completed:^(BOOL complete) {
                 
