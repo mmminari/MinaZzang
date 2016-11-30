@@ -73,6 +73,8 @@
                 <outlet property="alcLeadingOfLbEpMain" destination="8rM-Zf-mrg" id="Awf-kR-Zf1"/>
                 <outlet property="alcLeadingOfLbEpName" destination="x2t-Yp-QC6" id="JDT-e3-maB"/>
                 <outlet property="alcLeadingOfLbEpTitle" destination="1NM-J6-X5f" id="imj-kt-OAj"/>
+                <outlet property="alcWidthOfLbEpDetail" destination="4Or-d7-iOK" id="Xke-g7-6Ri"/>
+                <outlet property="alcWidthOfLbEpMain" destination="vXH-s2-xiV" id="PDo-Je-1MQ"/>
                 <outlet property="ivEpisode" destination="HOU-3r-VS8" id="Phc-uC-71j"/>
                 <outlet property="lbEpDetail" destination="uI4-hG-hKG" id="Z1J-PQ-vLB"/>
                 <outlet property="lbEpMain" destination="4An-SK-K5J" id="slG-su-P1v"/>

@@ -7,6 +7,7 @@
 //
 
 #import "EpisodeView.h"
+#import "LibraryClass.h"
 
 @interface EpisodeView ()
 
@@ -14,6 +15,10 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcLeadingOfLbEpTitle;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcLeadingOfLbEpMain;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcLeadingOfLbEpDetail;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcWidthOfLbEpMain;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcWidthOfLbEpDetail;
+
+@property (strong, nonatomic) LibraryClass *lib;
 
 @end
 
@@ -27,6 +32,13 @@
 - (void)drawRect:(CGRect)rect
 {
     [super drawRect:rect];
+    
+    self.lib = [LibraryClass sharedInstance];
+    
+    CGFloat maxWidth = (STANDARD_DEVICE_WIDTH - 20.0f) * 3;
+    
+    self.alcWidthOfLbEpMain.constant = WRATIO_WIDTH(maxWidth);
+    self.alcWidthOfLbEpDetail.constant = WRATIO_WIDTH(maxWidth);
 
 }
 
@@ -63,40 +75,38 @@
 - (void)startAnimation
 {
     
-    [UIView animateWithDuration:0.8f animations:^{
+    [UIView animateWithDuration:0.4f animations:^{
         
         self.alcLeadingOfLbEpTitle.constant = 10.0f;
         self.lbEpTitle.alpha = 1.0f;
         [self layoutIfNeeded];
         
-    } completion:^(BOOL finished) {
-        [UIView animateWithDuration:0.8f animations:^{
-            
-            self.alcLeadingOfLbEpName.constant = 10.0f;
-            self.lbEpName.alpha = 1.0f;
-
-            [self layoutIfNeeded];
-            
-        }completion:^(BOOL finished) {
-            [UIView animateWithDuration:0.8f animations:^{
-                
-                self.alcLeadingOfLbEpMain.constant = 10.0f;
-                self.lbEpMain.alpha = 1.0f;
-                [self layoutIfNeeded];
-                
-            }completion:^(BOOL finished) {
-                [UIView animateWithDuration:0.8f animations:^{
-                    
-                    self.alcLeadingOfLbEpDetail.constant = 10.0f;
-                    self.lbEpDetail.alpha = 1.0f;
-                    [self layoutIfNeeded];
-                    
-                }];
-            }];
-        }];
     }];
+    
+    [UIView animateWithDuration:0.8f animations:^{
+        
+        self.alcLeadingOfLbEpName.constant = 10.0f;
+        self.lbEpName.alpha = 1.0f;
 
-
+        [self layoutIfNeeded];
+        
+    }];
+    
+    [UIView animateWithDuration:1.2f animations:^{
+        
+        self.alcLeadingOfLbEpMain.constant = 10.0f;
+        self.lbEpMain.alpha = 1.0f;
+        [self layoutIfNeeded];
+        
+    }];
+    
+    [UIView animateWithDuration:1.6f animations:^{
+        
+        self.alcLeadingOfLbEpDetail.constant = 10.0f;
+        self.lbEpDetail.alpha = 1.0f;
+        [self layoutIfNeeded];
+        
+    }];
 }
 
 - (void)startAnimationWithCompletion:(void(^)(void))completion
