@@ -17,6 +17,9 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcLeadingOfLbEpDetail;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcWidthOfLbEpMain;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcWidthOfLbEpDetail;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcHeightOfEpNum;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcwidthOfEpNum;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcLeadingOfEpNum;
 
 @property (strong, nonatomic) LibraryClass *lib;
 
@@ -39,6 +42,8 @@
     
     self.alcWidthOfLbEpMain.constant = WRATIO_WIDTH(maxWidth);
     self.alcWidthOfLbEpDetail.constant = WRATIO_WIDTH(maxWidth);
+    self.alcHeightOfEpNum.constant = WRATIO_WIDTH(276.0f);
+    self.alcwidthOfEpNum.constant = WRATIO_WIDTH(60.f);
 
 }
 
@@ -47,8 +52,8 @@
     self.lbEpName.alpha = 0.0f;
     self.alcLeadingOfLbEpName.constant = -100.0f;
     
-    self.lbEpTitle.alpha = 0.0f;
-    self.alcLeadingOfLbEpTitle.constant = -100.0f;
+    self.ivEpNum.alpha = 0.0f;
+    self.alcLeadingOfEpNum.constant = -100.0f;
     
     self.lbEpMain.alpha = 0.0f;
     self.alcLeadingOfLbEpMain.constant = -100.0f;
@@ -62,8 +67,8 @@
     self.lbEpName.alpha = 1.0f;
     self.alcLeadingOfLbEpName.constant = 10.0f;
     
-    self.lbEpTitle.alpha = 1.0f;
-    self.alcLeadingOfLbEpTitle.constant = 10.0f;
+    self.ivEpNum.alpha = 1.0f;
+    self.alcLeadingOfEpNum.constant = 10.0f;
     
     self.lbEpMain.alpha = 1.0f;
     self.alcLeadingOfLbEpMain.constant = 10.0f;
@@ -77,8 +82,8 @@
     
     [UIView animateWithDuration:0.4f animations:^{
         
-        self.alcLeadingOfLbEpTitle.constant = 10.0f;
-        self.lbEpTitle.alpha = 1.0f;
+        self.alcLeadingOfEpNum.constant = 10.0f;
+        self.ivEpNum.alpha = 1.0f;
         [self layoutIfNeeded];
         
     }];

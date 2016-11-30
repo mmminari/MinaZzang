@@ -15,7 +15,7 @@
 @property (nonatomic, strong) NSString *eRegdate;
 @property (nonatomic, strong) NSString *eName;
 @property (nonatomic, strong) NSString *eMainImgUrl;
-@property (nonatomic, assign) id eSubTitle;
+@property (nonatomic, strong) NSString *eSubTitle;
 @property (nonatomic, assign) BOOL eIsmain;
 @property (nonatomic, strong) NSString *eDetailImgUrl;
 @property (nonatomic, strong) NSString *eInfoMain;

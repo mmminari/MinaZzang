@@ -48,9 +48,12 @@
     
     EpList *episode = self.epList[indexPath.item];
 
-    cell.epView.lbEpName.text = episode.eName;
-    cell.epView.lbEpMain.text = episode.eInfoMain;
-    cell.epView.lbEpDetail.text = episode.eTitle;
+    LogGreen(@"urlString : %@", episode.eNumbering);
+    
+    cell.epView.ivEpNum.image = [self getEpisodeIconFromEpisodeNo:episode.eNumbering];
+    cell.epView.lbEpName.text = episode.eTitle;
+    cell.epView.lbEpMain.text = episode.eSubTitle;
+    cell.epView.lbEpDetail.text = episode.eInfoMain;
     LogGreen(@"animaedCells : %@ index.item : %zd", self.animatedCells, indexPath.item);
     
     
@@ -140,6 +143,19 @@
         
     }
     
+}
+
+#pragma mark - Private Method
+// Get episode icon image by episode number
+- (UIImage *)getEpisodeIconFromEpisodeNo:(NSString *)epNo
+{
+    UIImage *result = nil;
+    
+    NSString *fileName = [NSString stringWithFormat:@"icon_episode_%@",epNo];
+    
+    result = [UIImage imageNamed:fileName];
+    
+    return result;
 }
 
 @end

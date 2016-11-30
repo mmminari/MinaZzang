@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lbEpTitle;
 @property (weak, nonatomic) IBOutlet UILabel *lbEpMain;
 @property (weak, nonatomic) IBOutlet UILabel *lbEpDetail;
+@property (weak, nonatomic) IBOutlet UIImageView *ivEpNum;
 
 
 - (void)startAnimation;
