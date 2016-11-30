@@ -62,13 +62,6 @@
 
 - (void)startAnimation
 {
-    [UIView animateWithDuration:0.4f animations:^{
-        
-        self.alcLeadingOfLbEpName.constant = 10.0f;
-        self.lbEpName.alpha = 1.0f;
-        [self layoutIfNeeded];
-        
-    }];
     
     [UIView animateWithDuration:0.8f animations:^{
         
@@ -76,24 +69,34 @@
         self.lbEpTitle.alpha = 1.0f;
         [self layoutIfNeeded];
         
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.8f animations:^{
+            
+            self.alcLeadingOfLbEpName.constant = 10.0f;
+            self.lbEpName.alpha = 1.0f;
+
+            [self layoutIfNeeded];
+            
+        }completion:^(BOOL finished) {
+            [UIView animateWithDuration:0.8f animations:^{
+                
+                self.alcLeadingOfLbEpMain.constant = 10.0f;
+                self.lbEpMain.alpha = 1.0f;
+                [self layoutIfNeeded];
+                
+            }completion:^(BOOL finished) {
+                [UIView animateWithDuration:0.8f animations:^{
+                    
+                    self.alcLeadingOfLbEpDetail.constant = 10.0f;
+                    self.lbEpDetail.alpha = 1.0f;
+                    [self layoutIfNeeded];
+                    
+                }];
+            }];
+        }];
     }];
-    
-    [UIView animateWithDuration:1.2f animations:^{
-        
-        self.alcLeadingOfLbEpMain.constant = 10.0f;
-        self.lbEpMain.alpha = 1.0f;
-        [self layoutIfNeeded];
-        
-    }];
-    
-    [UIView animateWithDuration:1.6f animations:^{
-        
-        self.alcLeadingOfLbEpDetail.constant = 10.0f;
-        self.lbEpDetail.alpha = 1.0f;
-        [self layoutIfNeeded];
-        
-    }];
-    
+
+
 }
 
 - (void)startAnimationWithCompletion:(void(^)(void))completion

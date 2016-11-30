@@ -62,8 +62,11 @@
     {
         [cell.epView remainLayout];
     }
-
+    
+    __block NSMutableArray *temp = self.animatedCells;
+    
     [self.lib setImageView:cell.epView.ivEpisode urlString:episode.eMainImgUrl placeholderImage:nil animation:YES completed:^(BOOL complete) {
+        
         
         if(indexPath.item == 0)
         {
@@ -72,7 +75,7 @@
                 [cell.epView startAnimation];
             });
             
-            [self.animatedCells addObject:@(0)];
+            [temp addObject:@(0)];
             
         }
     }];

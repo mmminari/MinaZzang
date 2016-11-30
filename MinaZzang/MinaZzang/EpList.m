@@ -167,7 +167,7 @@ NSString *const kEpListENo = @"e_no";
         copy.eRegdate = [self.eRegdate copyWithZone:zone];
         copy.eName = [self.eName copyWithZone:zone];
         copy.eMainImgUrl = [self.eMainImgUrl copyWithZone:zone];
-        copy.eSubTitle = [self.eSubTitle copyWithZone:zone];
+        copy.eSubTitle = self.eSubTitle;
         copy.eIsmain = self.eIsmain;
         copy.eDetailImgUrl = [self.eDetailImgUrl copyWithZone:zone];
         copy.eInfoMain = [self.eInfoMain copyWithZone:zone];
@@ -175,7 +175,7 @@ NSString *const kEpListENo = @"e_no";
         copy.eOrder = self.eOrder;
         copy.eIsopen = [self.eIsopen copyWithZone:zone];
         copy.eNumbering = [self.eNumbering copyWithZone:zone];
-        copy.eFile = [self.eFile copyWithZone:zone];
+        copy.eFile = self.eFile;
         copy.eNo = self.eNo;
     }
     
